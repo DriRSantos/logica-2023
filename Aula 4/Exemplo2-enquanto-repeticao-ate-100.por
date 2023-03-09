@@ -1,29 +1,23 @@
 programa
-{
+{ // faça um programa usando o enquanto que escreva na tela números de 1 a 100.
 	
 	funcao inicio()
 	{
-		inteiro num1, num2
-	
-		escreva("Digite o primeiro número ")
-		leia(num1)
-		escreva("Digite o segundo número ")
-		leia(num2)
-
-		se(num1 % num2 == 0 ou num2 % num1 == 0){
-			escreva(num1, " é múltiplo de ", num2)
+		inteiro contador=1
+			
+		enquanto(contador<=100){
+			escreva("Número: ", contador, "\n")
+			contador++
 		}
-		senao {
-          	escreva("Não são múltiplos")
-          }
-	} 
+		escreva("Fim")
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 219; 
+ * @POSICAO-CURSOR = 242; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -3,27 +3,32 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro num1, num2
-	
-		escreva("Digite o primeiro número ")
-		leia(num1)
-		escreva("Digite o segundo número ")
-		leia(num2)
+		inteiro pessoas, idade, totMenor=0, totMaior=0
+		
+		escreva("Escreva quantas pessoas: ")
+		leia(pessoas)
 
-		se(num1 % num2 == 0 ou num2 % num1 == 0){
-			escreva(num1, " é múltiplo de ", num2)
-		}
-		senao {
-          	escreva("Não são múltiplos")
-          }
-	} 
+		para(inteiro i=0; i < pessoas; i++){
+			escreva("Digite a idade: ")
+			leia(idade)
+
+			se(idade >= 18){
+				totMaior++
+			}
+			senao {
+				totMenor++
+			}
+		}					
+		escreva("Total menor ", totMenor, "\n")
+		escreva("Total maior ", totMaior)
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 219; 
+ * @POSICAO-CURSOR = 377; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

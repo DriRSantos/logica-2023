@@ -2,28 +2,29 @@ programa
 {
 	
 	funcao inicio()
-	{
-		inteiro num1, num2
-	
-		escreva("Digite o primeiro número ")
-		leia(num1)
-		escreva("Digite o segundo número ")
-		leia(num2)
+	{	
+		inteiro num
 
-		se(num1 % num2 == 0 ou num2 % num1 == 0){
-			escreva(num1, " é múltiplo de ", num2)
+		escreva("Digite um número ")
+		leia(num)
+	
+		para(inteiro i=num; i <= 100; i++){
+
+			escreva("   ", num++, "\n")						
+			
+			se(num == 50){
+				pare
+			}
 		}
-		senao {
-          	escreva("Não são múltiplos")
-          }
-	} 
+		escreva(">> FIM <<")
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 219; 
+ * @POSICAO-CURSOR = 149; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

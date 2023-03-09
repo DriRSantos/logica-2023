@@ -3,27 +3,32 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro num1, num2
-	
-		escreva("Digite o primeiro número ")
-		leia(num1)
-		escreva("Digite o segundo número ")
-		leia(num2)
+		inteiro num, soma=0, contador=0
+		caracter confirmar='S'
+		
+		faca{
 
-		se(num1 % num2 == 0 ou num2 % num1 == 0){
-			escreva(num1, " é múltiplo de ", num2)
+			escreva("Digite um número: ")
+			leia(num)
+			
+			soma =+ num
+			contador++
+
+			escreva("Deseja continuar (S/s)? ")
+			leia(confirmar)
 		}
-		senao {
-          	escreva("Não são múltiplos")
-          }
-	} 
+		enquanto (confirmar == 'S' ou confirmar == 's')
+		
+		escreva("Soma: ", soma, "\n")
+		escreva("Media: ", soma/contador)
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 219; 
+ * @POSICAO-CURSOR = 224; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

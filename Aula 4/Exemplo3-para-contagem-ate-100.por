@@ -1,22 +1,20 @@
 programa
 {
+	inclua biblioteca Util --> u
 	
 	funcao inicio()
 	{
-		inteiro num1, num2
-	
-		escreva("Digite o primeiro número ")
-		leia(num1)
-		escreva("Digite o segundo número ")
-		leia(num2)
-
-		se(num1 % num2 == 0 ou num2 % num1 == 0){
-			escreva(num1, " é múltiplo de ", num2)
+		para(inteiro num=1; num <= 100; num++){
+			
+			escreva("   ", num, "\n")
+			u.aguarde(100)
+			
+			se(num == 50){
+				pare
+			}
 		}
-		senao {
-          	escreva("Não são múltiplos")
-          }
-	} 
+		escreva(">> FIM <<")
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
