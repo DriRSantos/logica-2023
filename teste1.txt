@@ -1,5 +1,3 @@
 2023 - Serratec - Lógica de Programação
 
 Aula 4 - Branch, Git Pull
-
-Serratex
