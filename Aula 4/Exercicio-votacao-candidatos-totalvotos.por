@@ -2,8 +2,8 @@ programa
 {
 	inclua biblioteca Matematica --> mat	
 	
-	funcao inicio()
-	{
+	funcao inicio(){
+		
 		inteiro voto=1, candX=0, candY=0, branco=0, nulo=0
 		real totalVotos
 		
@@ -33,10 +33,13 @@ programa
 
 		se(totalVotos > 0){
 			escreva("Total votos: ", totalVotos, "\n")
-			escreva("Votos candidato X: ", mat.arredondar((candX/totalVotos) * 100, 2), "\n")
-			escreva("Votos candidato Y: ", mat.arredondar((candY/totalVotos) * 100, 2), "\n")
-			escreva("Votos branco: ", mat.arredondar((branco/totalVotos) * 100, 2), "\n")
+			escreva("Votos candidato X: ", mat.arredondar((candX/totalVotos) * 100, 2), "% \n")
+			escreva("Votos candidato Y: ", mat.arredondar((candY/totalVotos) * 100, 2), "% \n")
+			escreva("Votos branco: ", mat.arredondar((branco/totalVotos) * 100, 2), "% \n")
 			escreva("Votos nulos: ", nulo, "\n")
+		}
+		senao{
+			escreva("Ninguém votou \n")
 		}
 	}
 }
@@ -45,9 +48,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 375; 
+ * @POSICAO-CURSOR = 476; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {voto, 7, 10, 4}-{candX, 7, 18, 5}-{candY, 7, 27, 5}-{branco, 7, 36, 6}-{nulo, 7, 46, 4}-{totalVotos, 8, 7, 10};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
